@@ -1,0 +1,21 @@
+<li>
+	{{burger_name}}
+	{{#if devour}}
+	<section>
+	<button class="change-devour" data-id="{{id}}" data-newdevour="{{devour}}">Devour!
+		{{!-- {{#if devour}}EAT!{{else}}WAKE UP!{{/if}} --}}
+		{{!-- {{#if devour}}EAT!{{else}}WAKE UP!{{/if}} --}}
+	</button>
+
+
+	{{!-- <button class="delete-burger" data-id="{{this.id}}">DELETE!</button> --}}
+	</section>
+	{{else}}
+	<section>
+	{{!-- <button class="change-devour" data-id="{{id}}" data-newdevour="{{devour}}"> --}}
+		{{!-- {{#if devour}}EAT!{{else}}WAKE UP!{{/if}} --}}
+		{{!-- {{#if devour}}EAT!{{else}}WAKE UP!{{/if}} --}}
+	{{!-- </button> --}}
+	</section>
+	{{/if}}
+</li>

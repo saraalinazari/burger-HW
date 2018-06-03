@@ -1,0 +1,74 @@
+<main class="page pricing-table-page">
+        <section class="clean-block clean-pricing dark">
+            <div class="container">
+                <div class="block-heading">
+                   
+                    <img src="assets/images/burger5.png" width="400px" length="400px">
+                  
+                </div>
+                <div class="row justify-content-center">
+                    <div class="col-md-5 col-lg-4">
+                        <div class="clean-pricing-item">
+                            <div class="heading">
+                                <h3>Burgers You Can Eat:</h3>
+                            </div>
+                            {{!-- <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                            <h1>Cats!</h1> --}}
+
+{{!-- <h2>Cats that are not sleepy!</h2> --}}
+<p>
+<ul>
+  {{#each burgers}}
+    {{#unless devoured}}
+      {{> burgers/burger-block devour=true}}
+    {{/unless}}
+  {{/each}}
+</ul></p>
+
+                        </div>
+                    </div>
+                    <div class="col-md-5 col-lg-4">
+                        <div class="clean-pricing-item">
+                  
+                            <div class="heading">
+                                <h3>Add Your Favorite Burger here:</h3>
+                            </div>
+                            {{!-- <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p> --}}
+                            {{!-- <p> --}}
+                           <form class="create-form">
+
+                              <div class="form-group">
+                                  <label for="bu">burger Name:</label>
+                                  <input type="text" id="bu" name="burger_name">
+                              </div>
+
+                              <button type="submit">Add Burger</button>
+                              </form>
+                              {{!-- </p> --}}
+
+                        </div>
+                    </div>
+                    <div class="col-md-5 col-lg-4">
+                        <div class="clean-pricing-item">
+                            <div class="heading">
+                                <h3>Burgers You Have Already Eaten:</h3>
+                            </div>
+                            {{!-- <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p> --}}
+                            <p>
+                            <ul>
+  {{#each burgers}}
+    {{#if devoured}}
+      {{> burgers/burger-block devour=false}}
+    {{/if}}
+  {{/each}}
+</ul>
+         </p>                  
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+
+
