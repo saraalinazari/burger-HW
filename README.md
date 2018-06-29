@@ -8,7 +8,7 @@
 ## Instructions
 Just Click on the [live site](https://boiling-headland-69540.herokuapp.com/) and order your burger and eat it.
 ![Image of Eat-Da-Burger](https://github.com/saraalinazari/burger-HW/blob/master/screenshots/burgerDemo.png?raw=true)
-
+After you insert your favorite burger in the middle column, you can click on Devour! to eat that yummy burger. Then you can see the burger name on the right column.
 ## Technologies Used
 - Node.js
 - Express.js NPM Package
