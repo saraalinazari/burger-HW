@@ -1,15 +1,15 @@
 # Express.js ORM Burger Application
 
-##Requirement
+## Requirement
 - Create a burger logger with MySQL, Node, Express, Handlebars and a homemade ORM. 
 - Application should follow the MVC design pattern to query and route data.
 - Application should use handlebars to generate HTML to show output.
 
-##Instructions
+## Instructions
 Just Click on the [live site](https://boiling-headland-69540.herokuapp.com/) and order your burger and eat it.
 ![Image of Eat-Da-Burger](https://github.com/saraalinazari/burger-HW/blob/master/screenshots/burgerDemo.png?raw=true)
 
-##Technologies Used
+## Technologies Used
 - Node.js
 - Express.js NPM Package
 - Body Parser NPM Package
@@ -19,12 +19,12 @@ Just Click on the [live site](https://boiling-headland-69540.herokuapp.com/) and
 - Bootstrap 4
 - Heroku
 
-##Code Explanation
-###Lesson Learned
+## Code Explanation
+### Lesson Learned
 - I learned how to use controllers to control view and database in order to handle data and have a dynamic interface to show the data.
 - Hosting on heroku to show application using db is more challenging.
 
-###Code Highlights
+### Code Highlights
 ...
 <li>
 	{{burger_name}}
