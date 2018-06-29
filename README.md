@@ -46,7 +46,6 @@ After you insert your favorite burger in the middle column, you can click on Dev
 router.put("/api/burgers/:id", function(req, res) {
   var condition = "id = " + req.params.id;
 
-  console.log("condition", condition);
 
   burger.update({
     devoured: req.body.devoured
