@@ -25,7 +25,7 @@ After you insert your favorite burger in the middle column, you can click on Dev
 - Hosting on heroku to show application using db is more challenging.
 
 ### Code Highlights
-...
+```
 <li>
 	{{burger_name}}
 	{{#if devour}}
@@ -40,9 +40,9 @@ After you insert your favorite burger in the middle column, you can click on Dev
 	</section>
 	{{/if}}
 </li>
-...
+```
 
-...
+```
 router.put("/api/burgers/:id", function(req, res) {
   var condition = "id = " + req.params.id;
 
@@ -72,4 +72,4 @@ router.delete("/api/burgers/:id", function(req, res) {
     }
   });
 });
-...
+```
